@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=BurpPro
+Exec=java -noverify -javaagent:/opt/burppro/Dr.FarFar.jar -jar /opt/burppro/burpsuite_pro_v2021.6.2.jar
+Terminal=false
+Type=Application
+Icon=/usr/share/icons/hicolor/256x256/apps/burppro.png
+StartupWMClass=Burpsuite pro
+Comment=You know
+Categories=hacking;
