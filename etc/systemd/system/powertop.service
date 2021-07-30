@@ -1,0 +1,12 @@
+[Unit]
+Description=Auto-tune power savings (oneshot)
+
+[Service]
+Type=oneshot
+StandardOutput=journal
+ExecStart=/usr/bin/powertop --auto-tune
+ExecStart=/bin/sh -c "iw dev wlan0 set power_save off"
+RemainAfterExit=true
+
+[Install]
+WantedBy=default.target
